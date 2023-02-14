@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Else Statement</title>
+</head>
+<body>
+    <script>
+        // let nums = [3, 24, 15, 5, 7, 5];
+
+        // let cal = nums.map (function(n) {
+        //     if (n === 5) n += 10;
+        //     return n;
+        // })
+
+        let customers = [
+            {name: "Customer1", age: 20, gender: "male"},
+            {name: "Customer2", age: 21, gender: "female"},
+            {name: "Customer3", age: 22, gender: "male"},
+            {name: "Customer4", age: 23, gender: "female"},
+            {name: "Customer5", age: 24},
+        ]
+
+        let result = customers.map (function(c){
+            if (c.name === "customer1" || c.name === "Customer1" && c.gender === "male") {
+                c.name = "Wai Yan Hein";
+                c.gender = "Male"
+            } else if (c.name === "customer4" || c.name === "Customer4" && c.gender === "female") {
+                c.name = "Nan Nyunt May";
+                c.gender = "Female"
+            } else {
+                c.name;
+                c.gender;
+            }
+            return c;
+        })
+
+    </script>
+</body>
+</html>

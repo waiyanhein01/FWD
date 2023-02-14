@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object M</title>
+</head>
+<body>
+    <script>
+        // Part-1
+
+        const person1 = {
+            name: "Wai Yan",
+            age: 23,
+            city: "Mahlaing",
+            height: 180,
+            dateOfBirth: 1999,
+            isActor: true,
+            sleep: () => {
+                alert ("Wai Yan is sleeping now...")
+            }
+        }
+
+        //Accessing object's properties and methods
+        //1) dot notation
+
+        // person1.name
+        // person1.age
+        // person1.city
+        // person1.learn()
+
+        //2) bracket notation
+
+        // person1["name"]
+        // person1["age"]
+        // person1["city"]
+        // person1["learn"]()
+
+        // Part-2
+
+        const carInfo = {
+            brand: "toyota",
+            price: 3000,
+            parchased: 2018,
+            model: 2015
+        }
+
+        const person2 = {
+            name: "Yan",
+            age: 23,
+            hometown: "Mahlaing",
+            isActor: true,
+            dateOfBirth: 1999,
+            car: carInfo,
+            eat:() => {
+                alert("Yan is eating now..")
+            }
+        }
+
+        // setting new properties and methods
+        // person2.hobby = "Game";
+        // person2.male = true;
+        // person2.walk = () =>{
+        //     alert ("Yan is walking now..")
+        // }
+        
+        // const input1Value ="MgMg";
+        // const input2Value ="30000";
+        // const propertyName = "donatedBy" + "MgMg";
+        // person2[propertyName] = "30000";
+    </script>
+</body>
+</html>

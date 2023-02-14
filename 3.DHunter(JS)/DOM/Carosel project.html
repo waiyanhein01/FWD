@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        .boxs {
+            width: 600px;
+            margin: 30px auto;
+            text-align: center;
+
+        }
+
+        .box {
+            height: 15rem;
+        }
+
+        #box1 {
+            background-color: blue;
+        }
+
+        #box2 {
+            background-color: forestgreen;
+            display: none;
+        }
+
+        #box3 {
+            background-color: yellow;
+            display: none;
+        }
+
+        #box4 {
+            background-color: red;
+            display: none;
+        }
+
+        #box5 {
+            background-color: brown;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxs">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="control">
+            <button id="prev">Preview</button>
+            <button id="next">Next</button>
+        </div>
+
+        <script>
+            let num = 1;
+
+            function next() {
+                document.querySelector(`#box${num}`).style.display = "none"
+                num++
+                if(num > 5) num = 1
+                document.querySelector(`#box${num}`).style.display = "block"
+            }
+
+            function prev() {
+                document.querySelector(`#box${num}`).style.display = "none"
+                num--
+                if(num < 1) num = 5
+                document.querySelector(`#box${num}`).style.display = "block"
+            }
+
+            document.querySelector("#next").onclick = next
+            document.querySelector("#prev").onclick = prev
+
+            setInterval(next, 3000)
+        </script>
+    </div>
+</body>
+</html>

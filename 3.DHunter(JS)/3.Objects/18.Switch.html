@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        let customers = [
+            {name: "Customer1", age: 20, gender: "male"},
+            {name: "Customer2", age: 21, gender: "female"},
+            {name: "Customer3", age: 22, gender: "male"},
+            {name: "Customer4", age: 23, gender: "female"},
+            {name: "Customer5", age: 24},
+        ]
+
+        let info = customers.map (function (c) {
+            switch (c.name) {
+                case "Customer1":
+                    c.name = "Wai Yan Hein";
+                    c.gender = "Male";
+                    break;
+
+                case "Customer4":
+                    c.name = "Nan Nyunt May";
+                    c.gender = "Female";
+                    break;
+            
+                default:
+                    c.name;
+                    c.gender;
+            }
+            return c;
+        })
+    </script>
+</body>
+</html>

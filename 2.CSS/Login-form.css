@@ -1,0 +1,128 @@
+.main {
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+body {
+    background-color: #333;
+}
+
+.header {
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    background-color: #333;
+    border: #333;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 600px;
+}
+
+.aside {
+    display: inline-block;
+    width: 40%;
+}
+
+.font {
+    font-size: 90px;
+    font-family: Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
+    background: linear-gradient(81.84deg, #0099ff -9.4%, #a033ff 51.57%, #ff5280 84.07%, #ff7061 90.59%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 90px;
+    padding: 0 0 8px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.letter {
+    color: white;
+}
+
+.content {
+    display: inline-block;
+    width: 40%;
+}
+
+.logoimage {
+    width: 160%;   
+}
+
+.appstoreimage {
+    width: 120px;
+    height: 40px;
+}
+
+.blockelement {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bcolor {
+    background-color: #0a7cff;
+    border-color: #0a7cff;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 19px;
+}
+
+.link {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.img {
+    margin-top: 20px;
+}
+
+.underline {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.underline:hover {
+    border-bottom-style: solid;
+}
+
+.container {
+}
+
+.footer {
+    margin-top: 100px;
+    margin-right: 400px;
+    clear: both;
+    width: 100%;
+    color: white;
+}
+
+.policy { 
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.meta {
+    height: auto;
+    max-width: 100%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties and Methods</title>
+</head>
+<body>
+    <div class="box1">
+        BOX1
+    </div>
+    <div class="box2">
+        BOX2
+    </div>
+
+    <h1>
+        Hello <b class="name">I'm Wai Yan Hein</b>
+    </h1>
+
+    <script>
+                        // overWirite text
+        
+        // document.querySelector(".box1").textContent = "Hi <i>DOM</i>";
+        // document.querySelector(".box2").innerHTML = "Hi <i>DOM</i>";
+
+                        //add new text
+
+        // let newText = document.createTextNode("Hi DOM");
+        // document.querySelector(".box1").appendChild(newText);
+
+                        //create new element
+
+        let newElement = document.createElement("i");
+        newElement.textContent = "Hello World";
+        let box1 = document.querySelector(".box1");
+        box1.appendChild(newElement);
+        //box1.insertBefore(newElement, box1.firstChild)
+
+                          //remove element
+        
+        //newElement.remove()
+
+                        //add,remove and toggel classname
+
+        newElement.classList.add("list", "element");
+        newElement.classList.remove("list")
+        newElement.classList.toggle("list") //true
+        newElement.classList.toggle("list") //false
+
+                    //add get attribute
+
+        newElement.setAttribute("title", "hello world")
+        newElement.getAttribute("title")
+
+                    //parentNode
+
+        let name = document.querySelector(".name").parentNode
+    </script>
+</body>
+</html>

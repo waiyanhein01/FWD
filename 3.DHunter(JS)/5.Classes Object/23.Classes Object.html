@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Object</title>
+</head>
+<body>
+    <script>
+
+        //class- build in object and then you can use class object name
+
+        class city {
+            name = "Yangon"
+            country = "Myanmar"
+            location () {
+                console.log(`${this.country} is a golden land in Souteast Asia.`)
+            }
+        }
+
+        let myCity = new city
+
+        //Access control modifier
+        //private,public,protected,static
+
+        //Static class- you can use directly class object name,no need to build class
+
+        class car {
+            static brand = "TOYOTA"
+            static color = "black"
+            static cal (a, b) {
+                return a + b;
+                //console.log(`${this.color} is the most i like in ${this.brand} `)
+            }
+        }
+
+        //private,public(for knowledge)
+        class student {
+            #name = "Yan" //private
+            age = 23      //public
+            info() {
+                console.log(`My name is ${this.#name} and ${this.age} years old`)
+            }
+        }
+
+        let myInfo = new student()
+    </script>
+</body>
+</html>

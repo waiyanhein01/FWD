@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+
+        function cal () {
+            let num = 0;
+            for (i = 0; i < 10; i++) {
+                num += i;
+            }
+            return num;
+        }
+        
+        function calAfter () {
+            return new Promise((resolve, reject) => {
+                let result = cal ();
+                if (result) resolve(result);
+                else  reject();
+            })
+        }
+
+        console.log("a")
+        calAfter()
+         .then (result => console.log(result))
+         .catch ( () => console.log("error"))
+        console.log("c")
+
+    </script>
+</body>
+</html>

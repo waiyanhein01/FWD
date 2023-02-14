@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        // let cities = ["Yangon", "Mandalay", "Mahlaing", "Shwebo", "Monywa"]
+
+        // for(let i=0; i<cities.length; i++) {
+        //     console.log(cities[i], i)
+        // }
+
+        let students = [
+            {name: "Wai", age: 23, email: "student1@gmail.com", dateOfBirth: 15.2},
+            {name: "Aung", age: 20, email: "student2@gmail.com", dateOfBirth: 15.4},
+            {name: "Sai", age: 22, email: "student3@gmail.com", dateOfBirth: 15.3},
+            {name: "Thu", age: 24, email: "student4@gmail.com", dateOfBirth: 15.6},
+            {name: "Hpone", age: 21, email: "student5@gmail.com", dateOfBirth: 15.8}
+        ]
+
+        const sendEmail = (email) => {
+            console.log ("Sending email to: ", email)
+        }
+
+        const senddisemail = (email) => {
+            console.log("Sending Birthday discount email to: ", email)
+        }
+
+        for (let i=0; i<students.length; i++) {
+            let studentEmail = students[i].email;
+            let studentBirthday = students[i].dateOfBirth;
+            if (studentBirthday === 15.2){
+                senddisemail(studentEmail);
+            } 
+            else {
+                sendEmail(studentEmail);
+            }
+        }
+    </script>
+</body>
+</html>

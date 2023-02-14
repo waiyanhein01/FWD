@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Function</title>
+</head>
+<body>
+    <script>
+        /* Most use Build-in method and method*/
+
+        //filter fuction
+
+        const students = [
+            {name:"student1", email:"students1@email.com", gender:"male", age:"34"},
+            {name:"student2", email:"students2@email.com", gender:"female", age:"32"},
+            {name:"student3", email:"students3@email.com", gender:"male", age:"31"},
+            {name:"student4", email:"students4@email.com", gender:"female", age:"29"},
+        ]
+
+        const isMale = (arrayElement) => {
+            return arrayElement.gender === "male" && arrayElement.age < 32;
+        }
+
+        //(or)
+        
+         const isFemale = arrayElement => arrayElement.gender === "female" && arrayElement.age < 32;
+
+        //(or)
+
+        students.filter(arrayElement => arrayElement.gender === "female" && arrayElement.age < 32);
+        // students.filter(isMale);
+    </script>
+</body>
+</html>

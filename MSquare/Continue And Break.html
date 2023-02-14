@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue and Break</title>
+</head>
+<body>
+    <script>
+        const students = [
+            {name: "WaiYanHein", email: "wai@email.com", gender: "male"},
+            {name: "MyaMya", email: "mya@email.com", gender: "female"},
+            {name: "AungAung", email: "aung@email.com", gender: "male"},
+            {name: "AyeAye", email: "aye@email.com", gender: "female"},
+            {name: "TunTun", email: "tun@email.com", gender: "male"},
+        ]
+
+        /* Continue */
+
+        for (let i=0; i<students.length; i++) {
+            let currentStudent = students[i]; 
+            if (currentStudent.gender === 'female') {
+                continue;
+            }
+            console.log("Sending email to: ", currentStudent.email)
+        }
+
+        /* Break */
+
+        for (let i=0; i<students.length; i++) {
+            let currentStudent = students[i];
+            console.log("Sending email to: ", currentStudent.email)
+            if (i === 2) {
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

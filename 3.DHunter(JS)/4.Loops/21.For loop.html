@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+
+
+        let customers = [
+            {name: "Customer1", age: 20, gender: "male"},
+            {name: "Customer2", age: 21, gender: "female"},
+            {name: "Customer3", age: 22, gender: "male"},
+            {name: "Customer4", age: 23, gender: "female"},
+            {name: "Customer5", age: 25, gender: "male"},
+        ]
+
+        for (let i = 0; i < customers.length; i++) {
+            if(customers[i].age < 0) break //continue
+            console.log(customers[i])
+        }
+    </script>
+</body>
+</html>

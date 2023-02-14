@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method and Properties</title>
+</head>
+<body>
+    <script>
+        /*Most use build-in methods and properties*/
+
+        //Strings 
+
+        let textString = "Welcome to Myanmar"
+        textString.toUpperCase();
+        textString.toLowerCase();
+        textString.length;
+        textString.indexOf("c")
+
+        //Number
+
+        let num = "20";
+        parseInt(num, 10);
+
+        let num1 = 10;
+        num1.toString();
+
+        //Object
+
+        const student = {name: "Wai Yan Hein", email: "waiyan@gmail.com", gender: "male"};
+        Object.keys(students);
+        Object.values(students);
+        students.hasOwnProperty('name'); //true
+        students.hasOwnProperty('age');//false
+
+        //Arrays
+        const fruits = ["Apple", "Orange", "Mango"] 
+        fruits.length();
+        
+        fruits[fruits.length -1];
+        fruits.push("Stawberry");
+        fruits.pop();
+        fruits.indexOf("Apple"); //0
+        fruits.indexOf("Pineapple"); //-1
+        fruits.slice(0, 2);
+        fruits.splice(0, 3);
+        fruits.join(",");
+    </script>
+</body>
+</html>

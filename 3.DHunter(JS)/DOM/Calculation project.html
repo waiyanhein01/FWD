@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <style>
+        * {
+            user-select: none;
+            cursor: pointer;
+        }
+        h1 {
+            margin-left: 85px;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(-45deg, yellow, red);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            border: 1px solid #333333;
+            
+        }
+
+        #oneErr,
+        #twoErr {
+            display: none;
+            color: red;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculate</h1>
+    <div class="card">
+        <p id="result"></p>
+        <div>
+            <input id="one" type="text" placeholder="Enter First Number.."> <br>
+            <small id="oneErr">Please Enter Number!</small>
+        </div>
+    
+        <div>
+            <input id="two" type="text" placeholder="Enter Second Number.."> <br>
+            <small id="twoErr">Please Enter Number!</small>
+        </div>
+    
+        <button id="btn">Click</button>
+        <button id="btn2">Clear</button>
+    </div>
+
+    <script>
+        document.querySelector("#one").onkeyup = () => {
+            let one = parseInt(document.querySelector("#one").value)
+            if(!isNaN(one)) {
+                document.querySelector("#oneErr").style.display = "none"
+            } 
+        }
+
+        document.querySelector("#two").onkeyup = () => {
+            let two = parseInt(document.querySelector("#two").value)
+            if(!isNaN(two)) {
+                document.querySelector("#twoErr").style.display = "none"
+            } 
+        }
+        document.querySelector("#btn").onclick = () => {
+            let one = parseInt(document.querySelector("#one").value)
+            let two = parseInt(document.querySelector("#two").value)
+            
+            if(isNaN(one)) {
+                document.querySelector("#oneErr").style.display = "inline"
+            }
+
+            if(isNaN(two)) {
+                document.querySelector("#twoErr").style.display = "inline"
+            }
+
+            let result = one + two
+
+            if(!isNaN(result)) {
+                document.querySelector("#result").textContent = result
+            }
+        }
+    </script>
+</body>
+</html>

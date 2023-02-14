@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <script>
+        //Operators
+
+        /* Arithmetic operators */
+        // +(Additon) 
+        let num1 = 2;
+        let num2 = 3;
+        let num3 = num1 + num2 // num3 = 5
+
+        let str1 = "hello";
+        let str2 = "world";
+        let str3 = str1 + " " + str2 //str3 = "hello world"(string Concatenation)
+
+        // -(subtraction)
+        let num4 = 3;
+        let num5 = 5;
+        let num6 = num4 - num5 // num6 = -2
+
+        // *(multiplication)
+        let num7 = 2;
+        let num8 = 4;
+        let num9 = num7 * num8 // num9 = 8
+
+        // /(division)
+        let num10 = 4;
+        let num11 = 2;
+        let num12 = num10 / num11 // num12 = 2
+
+        // %(remainder)
+        let num13 = 12;
+        let num14 = 5;
+        let num15 = num13 % num14 // num15 = 2
+
+        // **(exponent)
+        let num16 = 4;
+        let num17 = 2;
+        let num18 = num16 % num17 // num18 = 16
+
+        /* Increment and decrement */
+        // ++
+        let num19 = 1;
+        let num20 = num19++ // num20 = 2
+
+        // --
+        let num21 = 1;
+        let num22 = num21++ // num22 = 0
+
+        // cannot do 1++ for example, must use a variable that is not constant(const)
+
+        /* Assignment Operators */
+        // =
+        let num = 1;
+
+        // += (Addition assignment)
+        let num23 = 1;
+        num23 += 5; // num23 = 6
+
+        // -= (Subtraction assignment)
+        let num24 = 10;
+        num24 -= 5; // num24 = 5
+
+        // *= (Multiplication assignment)
+        let num25 = 10;
+        num25 *= 5; // num25 = 50
+
+        // /= (Division assignment)
+        let num26 = 10;
+        num26 /= 5; // num26 = 2
+
+        /* Comparison Operators */
+        // == vs ===
+        let num27 = 5;
+        num27 == "5"; //output true
+        num27 === "5"; //output false
+
+        // != vs !==
+        let num28 = 5;
+        num28 != "5"; //output false
+        num28 !== "5"; //output true
+
+        // >(greater than) and <(less than)
+        let num29 = 2;
+        let num30 = 3;
+        num29 < num30 //output true
+        num29 > num30 //output false
+
+        // >=(greater than or equal to) and <=(less than or equal to)
+        let num31 = 2;
+        let num32 = 3;
+        num31 <= num32 //output true
+        num31 => num32 //output false
+
+        /* (Logical Operators) */
+        let num33 = 5
+        let num34 = 10
+
+        // && (and logical operator)
+        num33 < 3 && num34 < 8 // false
+        num33 > 4 && num34 < 15 // true
+
+        // || (or logical operator)
+        num33 < 3 || num34 < 9 // false
+        num33 > 2 || num34 > 11 // true
+        num33 > 4 || num34 < 12 // true
+
+        // ! (not logical operator)
+        !(num33 === num34) // true
+        !(num33 < num34 ) // false
+    </script>
+</body>
+</html>

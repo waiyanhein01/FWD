@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+
+        function name (a, b, c) {
+            return a + b + c;
+        }
+
+        let result = name ("wai", " yan", " hein");
+        
+        function cat () {
+            console.log("wah wah"); //another way
+        }
+
+        function dog (name) {
+            console.log(`Hello ${name}`) //another way
+        }
+
+                /*  Function Expersion*/
+
+        let myFunction = function () {
+                console.log("Hello");
+        }
+
+                /* Immediately Invoke Function Experssion(IIFE) */
+
+        (function () {
+            console.log("Hello Yann!")
+        }) ()
+
+    </script>
+</body>
+</html>

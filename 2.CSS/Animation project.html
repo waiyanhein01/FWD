@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: scroll;
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(45deg, #926D00, #B0A8B9);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 200;   
+        }
+
+        .card {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-image {
+            width: 30%;
+            border-radius: 50px 5px;
+            animation: toRight 1s;
+            transition: 1s;
+        }
+
+        .card-image:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .card-text {
+            margin-left: 30px;
+            transition: 1s;
+        }
+
+        .card-text:hover {
+            transform: scale(1.1) rotate(1deg);
+        }
+
+        .text-head {
+            animation: toLeft 1s;
+        }
+
+        .text {
+            margin-top: 20px;
+            animation: toLeft 1.5s;
+            text-indent: 7%;
+            padding-bottom: 30px;
+        }
+
+        .card-btn {
+            text-decoration: none;
+            border: 1px solid #926D00;
+            border-radius: 50px 10px;
+            padding: 10px 15px;
+            background-color: #333333;
+            color: white;
+            font-size: 15px;
+        }
+
+        @keyframes toRight {
+            0% {
+                transform: translateX(-300px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes toLeft {
+            0% {
+                transform: translateX(300px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./image/peakpx.jpg" class="card-image" alt="">
+        <div class="card-text">
+            <h2 class="text-head">Nezuko Kamado</h2>
+            <p class="text">"My dear brother! I'm so sorry. I'm sorry I didn't understand for so long. I put everything on your shoulders. Why is it you who always has to suffer? Why do kind people who struggle every day get trampled over and over?"</p>
+            <div>
+                <a href="https://kimetsu-no-yaiba.fandom.com/wiki/Nezuko_Kamado" target="_blank" class="card-btn">SeeMore..</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

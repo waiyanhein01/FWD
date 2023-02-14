@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+</head>
+<body>
+    <script>
+
+        async function covidInfo () {
+            const res = await fetch("https://api.covid19api.com/summary");
+            const data = await res.json();
+            const global = data.Global;
+            const country = data.Countries;
+            const myanmar = country.find (c => c.Country === "Myanmar")
+            console.log(myanmar);
+        }
+        covidInfo ()
+    </script>
+</body>
+</html>

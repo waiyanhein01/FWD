@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <p class = "text1">Hello "Click under buttom"</p>
+    <button class="btn" onclick = "newtext1()">Click Me</button>
+
+    <p class="text2">Hello</p>
+    <button class="btn2">Click</button>
+
+    <p class="cal">Result</p>
+    <button class="btn3">Calculate</button>
+
+    <script>
+
+                //HTML event attribute
+
+        function newtext1() {
+            document.querySelector(".text1").textContent = "I Love You";
+        }
+
+                //addEventListener
+
+        // document.querySelector(".btn2").addEventListener( "click", () => {
+        //     document.querySelector(".text2").textContent = "I Love You"
+        // })
+
+                //onclick
+        
+        document.querySelector(".btn2").onclick = () => {
+            document.querySelector(".text2").textContent = "I love You"
+        }
+
+                    //Calculation
+        
+        let num1 = 3;
+        let num2 = 4;
+
+        document.querySelector(".btn3").addEventListener("click", () => {
+            myCal(num1, num2);
+        })
+
+        function myCal(a, b) {
+            document.querySelector(".cal").textContent = a + b;
+        }
+    </script>
+</body>
+</html>
